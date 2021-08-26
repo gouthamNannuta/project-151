@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="/base.js"></script>
+  </head>
+  <body>
+      <a-scene background="color:black">
+        <a-entity>
+          <a-camera position="20 80 100"></a-camera>
+      </a-entity>
+        <a-a-assets timeout="10000">
+          <a-assets-item id="car" src="./2016_ducati_xdiavel_s/scene.gltf"></a-assets-item>
+        </a-a-assets>
+        <a-entity base="radius:300 ; height:"></a-entity>
+        <a-entity  gltf-model="#car" position="0 1 -10" rotation="0 90 0" scale="1 1 1" shadow="cast:true"></a-entity>
+        <a-entity light="castShadow: true; color:white; intensity:50" position="0 15 0"></a-entity>
+        <a-entity light="type:ambient;"></a-entity>
+      </a-scene>
+  </body>
+  </html>
