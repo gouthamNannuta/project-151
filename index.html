@@ -3,6 +3,7 @@
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="/base.js"></script>
+    <script src="click-events.js"></script>
   </head>
   <body>
       <a-scene background="color:black">
@@ -13,8 +14,8 @@
           <a-assets-item id="car" src="./car/scene.gltf"></a-assets-item>
         </a-a-assets>
         <a-entity base="radius:300 ; height:"></a-entity>
-        <a-entity  gltf-model="#car" position="0 1 -10" rotation="0 90 0" scale="50 50 50" shadow="cast:true"></a-entity>
-        <a-entity light="castShadow: true; color:white; intensity:25" position="0 15 0"></a-entity>
+        <a-entity  gltf-model="#car" position="0 1 -10" rotation="0 90 0" scale="50 50 50" shadow="cast:true" car-model></a-entity>
+        <a-entity light="castShadow: true; color:white; intensity:05" position="0 15 0"></a-entity>
         <a-entity light="type:ambient;"></a-entity>
       </a-scene>
   </body>
